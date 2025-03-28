@@ -1,1 +1,0 @@
-# joke-and-advice-generator

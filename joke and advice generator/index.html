@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="stylesheet" href="style.css">
+  <title>Jokes and Advice Generator</title>
+
+</head>
+
+<body>
+  <header>
+    <h1>"Jokes or Advice: What’s Your Pick?"</h1>
+ <nav>
+    <button id="joke-generator">Crack a Joke</button>
+  <button id="advice-generator">Get Advice</button> 
+</nav>
+</header>
+  <div class="container hidden" id="advice-container">
+    <p class="advice-id"><!-- Advice ID goes here --></p>
+    <div class="advice-container">
+      <p> <!-- "Advice text goes here" --></p>
+    </div>
+    <div class="divider-img">
+      <img src="./images/pattern-divider-mobile.svg" alt="">
+    </div>
+    
+    <button class="dice-icon" id="advice-dice"><img src="./images/icon-dice.svg" alt=""></button>
+  </div>
+
+  <div class="container hidden" id="joke-container">
+    <p class="joke-id"><!-- Joke ID goes here --></p>
+    <div class="joke-container"> 
+      <p><!-- Joke text goes here --></p>
+    </div>
+    <div class="divider-img">
+      <img src="./images/pattern-divider-mobile.svg" alt="">
+    </div>
+    
+    <button class="dice-icon" id="joke-dice"><img src="./images/icon-dice.svg" alt=""></button>
+  </div>
+  <button class="hidden" id="exit-btn">Back to Choices</button>
+  <script src="script.js"></script>
+</body>
+
+</html>
