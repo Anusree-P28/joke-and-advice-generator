@@ -66,6 +66,7 @@ button {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
     width: 80%;
     border-radius: 1rem;
+    word-wrap: break-word;
     position: relative;
 }
 
