@@ -78,9 +78,9 @@ async function adviceGenerator() {
         advicePara.innerText = `"${advice}"`;
 
     } catch (error) {
-        console.error('Error fetching joke:', error);
-        adviceId.textContent = 'Joke #???';
-        advicePara.textContent = 'Unable to fetch joke. Please try again later.';
+        console.error('Error fetching advice:', error);
+        adviceId.textContent = 'Advice #???';
+        advicePara.textContent = 'Unable to fetch advice. Please try again later.';
     }
 
 }
@@ -98,8 +98,8 @@ async function jokeGenerator() {
 
         if (type === 'twopart') {
             jokeId.innerText = `Joke #${id}`;
-            jokePara.innerText = `"${setup}${delivery}"`
-        } else {
+            jokePara.innerText = `"${setup}\n${delivery}"`
+        } else {    // type === single
             jokeId.innerText = `Joke #${id}`;
             jokePara.innerText = `"${joke}"`
         }
